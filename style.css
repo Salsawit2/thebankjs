@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Balance Section */
+.balance {
+  margin: 20px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.income, .expense {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  margin: 0 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.income h3 {
+  color: #28a745; /* Green for income */
+}
+
+.expense h3 {
+  color: #dc3545; /* Red for expense */
+}
+
+/* Form */
+#transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#transaction-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#transaction-form button {
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#transaction-form button:hover {
+  background: #0056b3;
+}
+
+/* Transaction List */
+#transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-income {
+  border-left: 5px solid #28a745; /* Green border for income */
+}
+
+.transaction-expense {
+  border-left: 5px solid #dc3545; /* Red border for expense */
+}
+
+.transaction-description {
+  font-weight: bold;
+}
+
+.transaction-amount {
+  color: #333;
+}
